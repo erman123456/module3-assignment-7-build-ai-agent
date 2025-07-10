@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // Make sure this matches where you expect compiled files
+    "rootDir": "./",    // Often helpful to define the root of your source files
+    "module": "esnext", // Or "node16", "nodenext"
+    "target": "es2022", // Or "esnext", "es2017" or higher
+    "moduleResolution": "node", // Important for Node.js module resolution
+    "esModuleInterop": true, // Recommended for better interop with CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"], // Ensure all your .ts files are included
+  "exclude": ["node_modules", "dist"] // Exclude these from compilation
+}
